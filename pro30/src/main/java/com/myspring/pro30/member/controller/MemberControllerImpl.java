@@ -121,9 +121,11 @@ public class MemberControllerImpl   implements MemberController {
 	//회원가입 기능
 	@Override
 	@RequestMapping(value="/member/addMember.do", method = RequestMethod.POST )
-	public ModelAndView add(MemberVO memberVO, HttpServletRequest request, HttpServletResponse response)throws Exception {
-		
-		return null;
+	public ModelAndView add(@ModelAttribute("memberVO")MemberVO memberVO, HttpServletRequest request, HttpServletResponse response)throws Exception {
+		ModelAndView mav = new ModelAndView("redirect:/member/loginForm.do");
+		int result = 0;
+		result = memberService.add(memberVO);
+		return mav;
 	}
 
 	

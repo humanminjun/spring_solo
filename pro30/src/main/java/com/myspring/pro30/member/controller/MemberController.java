@@ -15,5 +15,5 @@ public interface MemberController {
 	//무조건 복습
 	public ModelAndView loginDo(@ModelAttribute("member")MemberVO memberVO, RedirectAttributes rAttr, HttpServletRequest request, HttpServletResponse response)throws Exception;
 	public ModelAndView remove(@RequestParam("id")String id,HttpServletRequest request, HttpServletResponse response)throws Exception;
-	public ModelAndView add(MemberVO memberVO, HttpServletRequest request, HttpServletResponse response)throws Exception;
+	public ModelAndView add(@ModelAttribute("memberVO")MemberVO memberVO, HttpServletRequest request, HttpServletResponse response)throws Exception;
 }

@@ -37,7 +37,7 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public int add(MemberVO memberVO) throws DataAccessException {
 		int add = memberDAO.insertMember(memberVO);
-		return 0;
+		return add;
 	}
 	
 	

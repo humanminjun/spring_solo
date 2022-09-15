@@ -12,6 +12,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel ="stylesheet" href="../css/style.css"/> 
 <title>헤더</title>
 </head>
 <body>
@@ -35,10 +36,12 @@
           </c:when>
           <c:otherwise>
 	        <a href="${contextPath}/member/loginForm.do"><h3>로그인</h3></a>
+	        <a href="${contextPath}/member/memberForm.do"><h3>회원가입</h3></a>
 	      </c:otherwise>
 	   </c:choose>     
      </td>
   </tr>
 </table>
+<script src="../js/app.js"></script>
 </body>
 </html>
