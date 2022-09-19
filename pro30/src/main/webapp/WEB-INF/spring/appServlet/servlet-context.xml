@@ -23,7 +23,7 @@
 		<beans:property name="suffix" value=".jsp" />
    	</beans:bean> -->
 	
-	<context:component-scan base-package="com.myspring.pro30" />
+	<context:component-scan base-package="com.myspring.dentist" />
    
 	
 	<!-- 타일즈 실습 설정 -->
@@ -48,7 +48,7 @@
    <mvc:interceptors>
     	<mvc:interceptor>
 	      <mvc:mapping path="/*/*.do"/>
-	   <beans:bean class="com.myspring.pro30.common.interceptor.ViewNameInterceptor" />
+	   <beans:bean class="com.myspring.dentist.common.interceptor.ViewNameInterceptor" />
 	</mvc:interceptor>
 </mvc:interceptors>
 
